@@ -1,6 +1,6 @@
 /**
  * @author: Amit Dayal
- * Controller controls how data from manager to router
+ * Controller controls how data flows from manager to router
  * When an exception occurs, the controller is responsible to passing it to the provided callback
  */
 import CupcakeManager from "../managers/CupcakeManager.js";
