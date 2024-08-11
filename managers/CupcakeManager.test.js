@@ -1,3 +1,7 @@
+/**
+ * @author: Amit Dayal
+ * Test CupcakeManager logic
+ */
 import ResponseException from "../models/ResponseException.js";
 import CupcakeManager from "./CupcakeManager.js";
 import CupcakeModel from "../models/CupcakeModel.js";

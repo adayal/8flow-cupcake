@@ -1,3 +1,8 @@
+/**
+ * @author: Amit Dayal
+ * Test Validator
+ * Test logic surrounding request validation
+ */
 import ResponseException from "../models/ResponseException.js";
 import Validator from "./Validator.js";
 import { beforeEach, describe, expect, test } from "@jest/globals";
@@ -26,20 +31,6 @@ describe("validate cupcake", () => {
         request.body.name = "test";
         request.body.description = "test";
         request.body.ingredients = ["test"];
-        expect(validator._validateCupcake(request)).toBe(false);
-    });
-
-    test("validate no description", () => {
-        request.body.name = "test";
-        request.body.price = 10;
-        request.body.ingredients = ["test"];
-        expect(validator._validateCupcake(request)).toBe(false);
-    });
-
-    test("validate no ingredients", () => {
-        request.body.name = "test";
-        request.body.price = 10;
-        request.body.description = "test";
         expect(validator._validateCupcake(request)).toBe(false);
     });
 

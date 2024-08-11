@@ -1,3 +1,8 @@
+/**
+ * @author: Amit Dayal
+ * Test controller
+ * Created custom test response class to pass into controller methods
+ */
 import CupcakeController from "./CupcakeController.js";
 import CupcakeManager from "./../managers/CupcakeManager.js";
 import CupcakeModel from "../models/CupcakeModel.js";

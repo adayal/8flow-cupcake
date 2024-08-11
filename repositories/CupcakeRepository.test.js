@@ -1,12 +1,14 @@
+/**
+ * @author: Amit Dayal
+ * Test CupcakeRepository
+ * This only tests id generation and db initalizing.
+ * All test-related files are cleaned after test
+ */
 import ResponseException from "../models/ResponseException.js";
 import { afterEach,describe, expect, jest, test } from "@jest/globals";
 import CupcakeRepository from "./CupcakeRepository.js";
 import { promises as fs, constants } from 'fs';
 import CupcakeModel from "../models/CupcakeModel.js";
-
-let cupcake = new CupcakeModel("cupcake1", 1, "cupcake1", ["apple", "banana"]);
-const fileName = "CupcakeDB.addtest.json";
-
 
 describe("Test Init DB", () => {
     let fileName = "./CupcakeDB.test.json";

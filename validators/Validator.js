@@ -9,6 +9,7 @@ class Validator {
 
     /**
      * Validate cupcake json object and properties
+     * Required fields are: name and price
      * Private method
      * @param {Request} req 
      * @returns boolean: true if valid, false otherwise
@@ -20,11 +21,19 @@ class Validator {
 
         const {name, price, description, ingredients} = req.body
 
-        if (!name || !price || !description || !ingredients) {
+        if (!name || !price ) {
             return false;
         }
 
-        if (typeof name !== 'string' || typeof price !== 'number' || typeof description !== 'string' || !Array.isArray(ingredients) || !ingredients.every(ingredient => typeof ingredient === 'string')) {
+        if (typeof name !== 'string' || typeof price !== 'number') {
+            return false;
+        }
+
+        if (description && typeof description !== 'string') {
+            return false;
+        }
+
+        if (ingredients && (!Array.isArray(ingredients) || !ingredients.every(ingredient => typeof ingredient === 'string'))) {
             return false;
         }
         return true;
