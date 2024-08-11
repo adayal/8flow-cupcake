@@ -30,7 +30,7 @@ Update cupcake at id
 Delete cupcake at id
 
 
-# CUPAKE Definition
+# CUPCAKE Definition
 {
   id: int,
   name: string | required,
