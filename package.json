@@ -5,7 +5,8 @@
   "description": "A server for a cupcake store",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
+    "start": "node index.js"
   },
   "keywords": [
     "8",
