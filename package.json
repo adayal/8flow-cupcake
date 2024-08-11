@@ -1,0 +1,22 @@
+{
+  "name": "8flow-cupcake",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A server for a cupcake store",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest"
+  },
+  "keywords": [
+    "8",
+    "flow"
+  ],
+  "author": "Amit Dayal",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0"
+  }
+}
